@@ -21,5 +21,5 @@
 
 - Download or clone the repository
 ```bash
-  git clone https://github.com/LizethTs?tab=repositories
+  git clone https://github.com/LizethTs/Web-Galeria.git
 ```
