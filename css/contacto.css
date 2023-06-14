@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #0e0a0a;
+}
+
+.menu {
+  background-color: #aba9a8;
+}
+
+.contacto {
+  width: 50%;
+  margin: auto;
+}
+
+.tituloContacto {
+  border-bottom: 2px solid #d4d4d4;
+}
+
+label {
+  color: #aba9a8;
+}
+
+.enviar {
+  background-color: #eeeee6;
+  padding: 6px 20px;
+  border-radius: 20px;
+  color: #0e0a0a;
+  border-style: none;
+}
+
+.enviar:hover {
+  background-color: #aba9a8;
+}
+
+.encontrame {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.encontrame ul li {
+  list-style: none;
+}
+
+.mapa {
+  border-radius: 10px;
+}
+
+.footerMenu {
+  border-top: 2px solid #eeeee6;
+  width: 70%;
+  margin: auto;
+}
+
+.footerEnlaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.footerEnlace {
+  list-style: none;
+  padding: 8px;
+}
+
+.footerEnlace a:hover {
+  text-decoration: underline;
+}
+
+.footerRedesSociales {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #aba9a8;
+}
+
+.footerDetalle {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacto {
+    width: 80%;
+  }
+
+  .encontrame {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .encontrame ul li {
+    text-align: start;
+  }
+
+  .mapa {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+
+  .footerEnlaces {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footerDetalle {
+    flex-direction: column;
+  }
+
+  .footerDetalle p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footerDetalle {
+    width: 70%;
+  }
+}
