@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #0e0a0a;
+}
+
+.menu {
+  background-color: #aba9a8;
+}
+
+.cuadro {
+  background-color: #0e0a0a;
+  color: #ffffff;
+}
+
+.card-text {
+  border-top: solid 2px #aba9a8;
+}
+
+.jornada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.jornadaImagen img {
+  border-radius: 30px;
+}
+
+.jornadaDetalles {
+  border: solid 2px #eeeee6;
+  border-radius: 30px;
+}
+
+.footerMenu {
+  border-top: 2px solid #eeeee6;
+  width: 70%;
+  margin: auto;
+}
+
+.footerEnlaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.footerEnlace {
+  list-style: none;
+  padding: 8px;
+}
+
+.footerEnlace a:hover {
+  text-decoration: underline;
+}
+
+.footerRedesSociales {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #aba9a8;
+}
+
+.footerDetalle {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .footerEnlaces {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .jornada {
+    flex-direction: column;
+  }
+
+  .footerDetalle {
+    flex-direction: column;
+  }
+
+  .footerDetalle p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .jornada {
+    width: 90%;
+  }
+
+  .footerDetalle {
+    width: 70%;
+  }
+}
