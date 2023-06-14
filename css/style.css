@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #0e0a0a;
+}
+
+.portada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nombreArtista {
+  font-size: 5rem;
+}
+
+.detalles p {
+  text-align: justify;
+}
+
+.footerRedesSociales {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #aba9a8;
+}
+
+.footerDetalle {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 992px) {
+  .footerDetalle {
+    flex-direction: column;
+  }
+
+  .footerDetalle p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portada {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .imagenPortada {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .nombreArtista {
+    font-size: 3rem;
+  }
+
+  .footerDetalle {
+    width: 70%;
+  }
+}
